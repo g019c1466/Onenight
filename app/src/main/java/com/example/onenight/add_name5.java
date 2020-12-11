@@ -33,10 +33,22 @@ public class add_name5 extends AppCompatActivity {
 
     public void onClick(View v) {
         String name = PersonName.getText().toString();
+        String name2 = PersonName.getText().toString();
+        String name3 = PersonName.getText().toString();
+        String name4 = PersonName.getText().toString();
+        String name5 = PersonName.getText().toString();
         Intent intent1 = new Intent(this, gamestart.class);
         startActivity(intent1);
         Intent intent2 = new Intent (getApplication(),gamestart.class);
-        intent2.putExtra("name3",name);
+        intent2.putExtra("nameEx",name);
+        Intent intent3 = new Intent (getApplication(),gamestart.class);
+        intent2.putExtra("nameEx2",name2);
+        Intent intent4 = new Intent (getApplication(),gamestart.class);
+        intent2.putExtra("nameEx3",name3);
+        Intent intent5 = new Intent (getApplication(),gamestart.class);
+        intent2.putExtra("nameEx4",name4);
+        Intent intent6 = new Intent (getApplication(),gamestart.class);
+        intent2.putExtra("nameEx5",name5);
         startActivity(intent2);
     }
 }
