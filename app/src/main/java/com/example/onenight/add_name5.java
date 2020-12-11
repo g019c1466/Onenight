@@ -10,7 +10,11 @@ import android.widget.EditText;
 
 public class add_name5 extends AppCompatActivity {
 
-    protected static String name3;
+    protected static String nameEx;
+    protected static String nameEx2;
+    protected static String nameEx3;
+    protected static String nameEx4;
+    protected static String nameEx5;
     public EditText PersonName;
     public EditText PersonName2;
     public EditText PersonName3;
@@ -42,13 +46,17 @@ public class add_name5 extends AppCompatActivity {
         Intent intent2 = new Intent (getApplication(),gamestart.class);
         intent2.putExtra("nameEx",name);
         Intent intent3 = new Intent (getApplication(),gamestart.class);
-        intent2.putExtra("nameEx2",name2);
+        intent3.putExtra("nameEx2",name2);
         Intent intent4 = new Intent (getApplication(),gamestart.class);
-        intent2.putExtra("nameEx3",name3);
+        intent4.putExtra("nameEx3",name3);
         Intent intent5 = new Intent (getApplication(),gamestart.class);
-        intent2.putExtra("nameEx4",name4);
+        intent5.putExtra("nameEx4",name4);
         Intent intent6 = new Intent (getApplication(),gamestart.class);
-        intent2.putExtra("nameEx5",name5);
+        intent6.putExtra("nameEx5",name5);
         startActivity(intent2);
+        startActivity(intent3);
+        startActivity(intent4);
+        startActivity(intent5);
+        startActivity(intent6);
     }
 }
